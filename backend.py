@@ -65,7 +65,7 @@ def get_messages():
     storage = read_storage()
     return jsonify({'success': True, 'messages': storage})
 
-# Serve static frontend files
+
 @app.route('/')
 def serve_index():
     return send_from_directory(app.static_folder, 'index.html')
