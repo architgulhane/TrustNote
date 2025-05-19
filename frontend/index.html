@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrustNote – Secure Message Logger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>TrustNote – Secure Message Logger</h1>
+        <div class="input-section">
+            <input type="text" id="messageInput" placeholder="Enter your message" maxlength="200">
+            <button id="saveBtn">Save Message</button>
+            <button id="verifyBtn">Verify Message</button>
+        </div>
+        <div id="confirmation" class="confirmation"></div>
+        <section class="messages-section">
+            <h2>Saved Messages</h2>
+            <ul id="messagesList"></ul>
+        </section>
+        <button id="accessMessagesBtn" class="access-btn">Access Saved Messages</button>
+        <button id="clearAllBtn" class="clear-btn">Clear All</button>
+    </main>
+    <div id="pinModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2 id="pinModalTitle">Set Access PIN</h2>
+            <input type="password" id="pinInput" maxlength="8" placeholder="Enter PIN (4-8 digits)">
+            <button id="pinSubmitBtn">Submit</button>
+            <div id="pinError" class="confirmation"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
