@@ -72,3 +72,5 @@ TrustNote/
 - **PINs are stored in localStorage (setup) and sessionStorage (access).**
 - **This app is for personal/local use.** For production, use a real database and secure authentication.
 - **All data is stored locally.**
+## Saved Messages:
+![Screenshot 2025-05-20 001717](https://github.com/user-attachments/assets/b30b5679-52cb-4e1c-b5b6-4c1c8c65d5ac)
