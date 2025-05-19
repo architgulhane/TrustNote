@@ -1,6 +1,6 @@
 # TrustNote – Secure Message Logger
 
-TrustNote is a simple, privacy-focused web app for securely logging and verifying messages. It uses a Flask backend and a modern vanilla JavaScript frontend. All messages are hashed with SHA-256 and stored locally in a flat JSON file. Access to saved messages is protected by a user-defined PIN.
+TrustNote is a simple, privacy-focused web app for securely logging and verifying messages. It uses a Flask backend and a  JavaScript frontend. All messages are hashed with SHA-256 and stored locally in a flat JSON file. Access to saved messages is protected by a user-defined PIN.
 
 ## Features
 
