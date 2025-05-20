@@ -6,8 +6,7 @@ import os
 from datetime import datetime
 
 app = Flask(__name__, static_folder='frontend')
-CORS(app)  # Enable CORS for all routes
-
+CORS(app)  
 STORAGE_FILE = 'storage.json'
 
 def sha256_hash(message):
@@ -29,11 +28,11 @@ def write_storage(data):
 @app.route('/save', methods=['POST'])
 def save_message():
     data = request.get_json()
-    # Overwrite support for clear/delete
+    
     if data.get('overwrite'):
         write_storage(data.get('messages', []))
         return jsonify({'success': True})
-    # Only handle save if 'message' is present and not empty
+    
     message = data.get('message')
     if message is None or not isinstance(message, str) or not message.strip():
         return jsonify({'success': False, 'error': 'No message provided.'}), 400
@@ -41,7 +40,6 @@ def save_message():
     hash_val = sha256_hash(message)
     timestamp = datetime.utcnow().isoformat() + 'Z'
     storage = read_storage()
-    # Prevent duplicate messages (optional, can remove if not needed)
     for entry in storage:
         if entry['message'] == message:
             return jsonify({'success': False, 'error': 'Message already exists.'}), 409
