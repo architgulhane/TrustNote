@@ -20,40 +20,7 @@ TrustNote is a simple, privacy-focused web app for securely logging and verifyin
 3. **Access saved messages:**
    - Click "Access Saved Messages" and set a PIN (first time) or enter your PIN (subsequent times) to view all saved messages.
    - You can log out to lock the messages again.
-
-## Getting Started
-
-### Prerequisites
-- Python 3.8+
-- pip
-
-### Installation & Running
-1. **Clone this repository:**
-   ```sh
-   git clone https://github.com/yourusername/TrustNote.git
-   cd TrustNote
-   ```
-2. **(Optional) Create a virtual environment:**
-   ```sh
-   python -m venv venv
-   # On Windows:
-   venv\Scripts\activate
-   # On Mac/Linux:
-   source venv/bin/activate
-   ```
-3. **Install dependencies:**
-   ```sh
-   pip install flask flask-cors
-   ```
-4. **Run the Flask server:**
-   ```sh
-   python backend.py
-   ```
-5. **Open your browser and go to:**
-   ```
-   http://localhost:5000
-   ```
-
+   - 
 ## Project Structure
 
 ```
